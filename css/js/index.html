@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <script src="script.js"></script>
+    <title>Formulário Interativo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Cadastro</h1>
+        <form id="registrationForm">
+            <!-- Campo de Primeiro Nome -->
+            <label for="firstName">Primeiro Nome:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <span class="error" id="firstNameError"></span>
+
+            <!-- Campo de Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
+            <!-- Campo de Senha -->
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="passwordError"></span>
+
+            <!-- Campo de Telefone -->
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <span class="error" id="phoneError"></span>
+
+            <!-- Campo de Formação Educacional -->
+            <label for="education">Formação Educacional:</label>
+            <select id="education" name="education" required>
+                <option value="">Selecione</option>
+                <option value="fundamental">Ensino Fundamental</option>
+                <option value="medio">Ensino Médio</option>
+                <option value="superior">Ensino Superior</option>
+            </select>
+            <span class="error" id="educationError"></span>
+
+            <!-- Campo de Seleção de Horário -->
+            <fieldset>
+                <legend>Horário do Curso:</legend>
+                <input type="radio" name="horario" value="matutino" required> Matutino<br>
+                <input type="radio" name="horario" value="vespertino"> Vespertino<br>
+                <input type="radio" name="horario" value="noturno"> Noturno<br>
+            </fieldset>
+            <span class="error" id="horarioError"></span>
+
+            <!-- Botão de Envio -->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
